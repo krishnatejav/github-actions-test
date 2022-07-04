@@ -10,6 +10,4 @@ jobs:
         run: echo "Hello World"
       - name: multiline script
         run: |
-          node -v
-          npm -v
           echo ${{ github.event.commits[0].message}} 
