@@ -9,3 +9,13 @@ jobs:
       - name: multiline script
         run: |
           echo ${{ github.event.commits[0].message}} 
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
+      - name: python command
+        run: |
+          import platform
+          print
+          (platform.processor())
+        shell: python 
